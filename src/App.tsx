@@ -50,6 +50,7 @@ function App() {
           placeholder="Напиши в меня"
           value={inputValue}
           onChange={changeValue}
+          onPressEnter={() => createTask()}
         />
         <Button type="primary" onClick={createTask}>
           add
